@@ -1,0 +1,81 @@
+from ws2812 import WS2812
+import utime
+import machine
+power = machine.Pin(11,machine.Pin.OUT)
+power.value(1)
+BLACK = (0, 0, 0)
+RED = (255, 0, 0)
+YELLOW = (255, 150, 0)
+ORANGE = (200, 150, 0)
+YELLOWGREEN = (100, 255, 0)
+GREEN = (0, 255, 0)
+CYAN = (0, 255, 255)
+BLUE = (0, 0, 255)
+VIOLET = (255, 0, 255)
+PURPLE = (180, 0, 255)
+MAGENTA = (200, 0, 150)
+WHITE = (255, 255, 255)
+COLORS = (RED, YELLOW, ORANGE, YELLOWGREEN, GREEN, CYAN, BLUE, PURPLE, MAGENTA, WHITE)
+MOVEColors = (BLUE, GREEN, BLUE, GREEN, BLUE, GREEN, RED, RED)
+BLASTColors = (BLUE, GREEN, RED)
+FLASHColors = (RED, BLACK, GREEN, BLUE)
+led = WS2812(12,1)#WS2812(pin_num,led_count)
+
+while True:
+    print("Dance Party!")
+    
+    for i in range (0,5):
+        for color in COLORS: 
+            led.pixels_fill(color)
+            led.pixels_show()
+            utime.sleep(0.2)    
+    
+    for i in range(0,10):
+        partyLanguage = ("3", "2", "1" , "BLAST OFF!", "MOVE!", "UP", "MOVE", "DOWN" , "MOVE ALL AROUND!", "!", "!") 
+        print(partyLanguage[i])
+        for color in MOVEColors: 
+            led.pixels_fill(color)
+            led.pixels_show()
+            utime.sleep(0.2)
+            
+    for i in range (0,10):
+        partyLanguage = ("3", "2", "1" , "BLAST OFF AGAIN!", "MOVE!", "UP", "MOVE", "DOWN" , "MOVE ALL AROUND!", "!", "!") 
+        print(partyLanguage[i])
+        for color in BLASTColors: 
+            led.pixels_fill(color)
+            led.pixels_show()
+            utime.sleep(0.15)
+
+    for i in range (0,6):
+        partyLanguage = ("3", "2", "1" , "BLAST OFF ONE MORE TIME!", "MOVE!", "UP", "MOVE", "DOWN" , "MOVE ALL AROUND!", "!", "!") 
+        print(partyLanguage[i])
+        for color in FLASHColors: 
+            led.pixels_fill(color)
+            led.pixels_show()
+            utime.sleep(0.1)
+                    
+            
+    print("Dance Party!")
+        
+    for i in range (0,10):
+        for color in COLORS: 
+            led.pixels_fill(color)
+            led.pixels_show()
+            utime.sleep(0.1)
+            
+    print("Dance Party!")         
+            
+    for i in range (0,10):
+        for color in COLORS: 
+            led.pixels_fill(color)
+            led.pixels_show()
+            utime.sleep(0.2)
+            
+    for i in range (0,10):
+        for color in COLORS: 
+            led.pixels_fill(color)
+            led.pixels_show()
+            utime.sleep(0.3)            
+            
+    
+   
