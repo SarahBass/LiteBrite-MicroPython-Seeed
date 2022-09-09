@@ -96,7 +96,7 @@ while True:
         print ("Green : Y : " + str(y))
         utime.sleep(0.2)
         
-        utime.sleep(1)
+    utime.sleep(1)
     
     while x < 255:
         x = x+5
