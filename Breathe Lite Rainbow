@@ -39,7 +39,18 @@ while True:
         utime.sleep(0.2)
     
     utime.sleep(1)
-    x=0
+    
+    while x >0:
+        x = x-5
+        y = int(x * 150/255)
+        WHITE = (x, x, x)
+        led.pixels_fill(WHITE)
+        led.pixels_show()
+        print (x)
+        print (y)
+        utime.sleep(0.2)
+  
+    utime.sleep(1)
     
     while x < 255:
         x = x+5
@@ -52,8 +63,16 @@ while True:
         utime.sleep(0.2)
         
     utime.sleep(1)
-    x=0
-    
+   
+    while x >0:
+        x = x-5
+        y = int(x * 150/255)
+        YELLOW = (x, y, 0)
+        led.pixels_fill(YELLOW)
+        led.pixels_show()
+        print (x)
+        print (y)
+        utime.sleep(0.2) 
     
     while x < 255:
         x = x+5
@@ -66,7 +85,18 @@ while True:
         utime.sleep(0.2)
         
     utime.sleep(1)
-    x=0
+    
+    while x > 0:
+        x = x-5
+        y = int(x * 150/255)
+        GREEN = (0, x, 0)
+        led.pixels_fill(GREEN)
+        led.pixels_show()
+        print (x)
+        print (y)
+        utime.sleep(0.2)
+        
+        utime.sleep(1)
     
     while x < 255:
         x = x+5
@@ -81,6 +111,19 @@ while True:
     utime.sleep(1)
     x=0
     
+    while x > 0:
+        x = x-5
+        y = int(x * 150/255)
+        CYAN = (0, x, x)
+        led.pixels_fill(CYAN)
+        led.pixels_show()
+        print (x)
+        print (y)
+        utime.sleep(0.2)
+        
+    utime.sleep(1)
+    
+    
     while x < 255:
         x = x+5
         y = int(x * 150/255)
@@ -92,7 +135,18 @@ while True:
         utime.sleep(0.2)
         
     utime.sleep(1)
-    x=0
+
+    while x > 0:
+        x = x-5
+        y = int(x * 150/255)
+        BLUE = (0, 0, x)
+        led.pixels_fill(BLUE)
+        led.pixels_show()
+        print (x)
+        print (y)
+        utime.sleep(0.2)
+        
+    utime.sleep(1)
     
     while x < 255:
         x = x+5
@@ -106,12 +160,24 @@ while True:
    
         
     utime.sleep(1)
-    x=0
     
+    while x > 0:
+        x = x-5
+        y = int(x * 150/255)
+        PURPLE = (y, 0, x)
+        led.pixels_fill(PURPLE)
+        led.pixels_show()
+        print (x)
+        print (y)
+        utime.sleep(0.2)
+   
+        
+    utime.sleep(1)
+
     while x < 255:
         x = x+5
         y = int(x * 150/255)
-        YELLOW = (x, 0, 0)
+        RED = (x, 0, 0)
         led.pixels_fill(RED)
         led.pixels_show()
         print (x)
@@ -119,7 +185,18 @@ while True:
         utime.sleep(0.2)
         
     utime.sleep(1)
-    x=0
+
+    while x > 0:
+        x = x-5
+        y = int(x * 150/255)
+        RED = (x, 0, 0)
+        led.pixels_fill(RED)
+        led.pixels_show()
+        print (x)
+        print (y)
+        utime.sleep(0.2)
+        
+    utime.sleep(1)
 
     
     while x < 255:
