@@ -34,8 +34,8 @@ while True:
         WHITE = (x, x, x)
         led.pixels_fill(WHITE)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("White : X: " + str(x))
+        print ("White : Y : " + str(y))
         utime.sleep(0.2)
     
     utime.sleep(1)
@@ -46,8 +46,8 @@ while True:
         WHITE = (x, x, x)
         led.pixels_fill(WHITE)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("White : X: " + str(x))
+        print ("White : Y : " + str(y))
         utime.sleep(0.2)
   
     utime.sleep(1)
@@ -58,8 +58,8 @@ while True:
         YELLOW = (x, y, 0)
         led.pixels_fill(YELLOW)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("Yellow : X: " + str(x))
+        print ("Yellow : Y : " + str(y))
         utime.sleep(0.2)
         
     utime.sleep(1)
@@ -70,8 +70,8 @@ while True:
         YELLOW = (x, y, 0)
         led.pixels_fill(YELLOW)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("Yellow : X: " + str(x))
+        print ("Yellow : Y : " + str(y))
         utime.sleep(0.2) 
     
     while x < 255:
@@ -80,8 +80,8 @@ while True:
         GREEN = (0, x, 0)
         led.pixels_fill(GREEN)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("Green : X: " + str(x))
+        print ("Green : Y : " + str(y))
         utime.sleep(0.2)
         
     utime.sleep(1)
@@ -92,8 +92,8 @@ while True:
         GREEN = (0, x, 0)
         led.pixels_fill(GREEN)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("Green : X: " + str(x))
+        print ("Green : Y : " + str(y))
         utime.sleep(0.2)
         
         utime.sleep(1)
@@ -104,12 +104,12 @@ while True:
         CYAN = (0, x, x)
         led.pixels_fill(CYAN)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("CYAN : X: " + str(x))
+        print ("CYAN : Y : " + str(y))
         utime.sleep(0.2)
         
     utime.sleep(1)
-    x=0
+    
     
     while x > 0:
         x = x-5
@@ -117,8 +117,8 @@ while True:
         CYAN = (0, x, x)
         led.pixels_fill(CYAN)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("CYAN : X: " + str(x))
+        print ("CYAN : Y : " + str(y))
         utime.sleep(0.2)
         
     utime.sleep(1)
@@ -130,8 +130,8 @@ while True:
         BLUE = (0, 0, x)
         led.pixels_fill(BLUE)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("BLUE : X: " + str(x))
+        print ("BLUE : Y : " + str(y))
         utime.sleep(0.2)
         
     utime.sleep(1)
@@ -142,8 +142,8 @@ while True:
         BLUE = (0, 0, x)
         led.pixels_fill(BLUE)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("BLUE : X: " + str(x))
+        print ("BLUE : Y : " + str(y))
         utime.sleep(0.2)
         
     utime.sleep(1)
@@ -154,8 +154,8 @@ while True:
         PURPLE = (y, 0, x)
         led.pixels_fill(PURPLE)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("PURPLE : X: " + str(x))
+        print ("PURPLE : Y : " + str(y))
         utime.sleep(0.2)
    
         
@@ -167,8 +167,8 @@ while True:
         PURPLE = (y, 0, x)
         led.pixels_fill(PURPLE)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("PURPLE : X: " + str(x))
+        print ("PURPLE : Y : " + str(y))
         utime.sleep(0.2)
    
         
@@ -180,8 +180,8 @@ while True:
         RED = (x, 0, 0)
         led.pixels_fill(RED)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("RED : X: " + str(x))
+        print ("RED : Y : " + str(y))
         utime.sleep(0.2)
         
     utime.sleep(1)
@@ -192,8 +192,8 @@ while True:
         RED = (x, 0, 0)
         led.pixels_fill(RED)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("RED : X: " + str(x))
+        print ("RED : Y : " + str(y))
         utime.sleep(0.2)
         
     utime.sleep(1)
@@ -205,8 +205,8 @@ while True:
         MYSTERY1 = (0,x,y)
         led.pixels_fill(MYSTERY1)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("MYSTERY : X: " + str(x))
+        print ("MYSTERY : Y : " + str(y))
         utime.sleep(0.2)
      
     utime.sleep(1)
@@ -218,8 +218,8 @@ while True:
         MYSTERY2 = (0,y,x)
         led.pixels_fill(MYSTERY2)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("MYSTERY : X: " + str(x))
+        print ("MYSTERY : Y : " + str(y))
         utime.sleep(0.2)
      
     utime.sleep(1)
@@ -232,8 +232,8 @@ while True:
         MYSTERY3 = (y,x,y)
         led.pixels_fill(MYSTERY3)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("MYSTERY : X: " + str(x))
+        print ("MYSTERY : Y : " + str(y))
         utime.sleep(0.2)
      
     utime.sleep(1)
@@ -245,8 +245,8 @@ while True:
         MYSTERY4 = (x,y,x)
         led.pixels_fill(MYSTERY4)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("MYSTERY : X: " + str(x))
+        print ("MYSTERY : Y : " + str(y))
         utime.sleep(0.2)
      
     utime.sleep(1)
@@ -258,8 +258,8 @@ while True:
         MYSTERY5 = (x,0,y)
         led.pixels_fill(MYSTERY5)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("MYSTERY : X: " + str(x))
+        print ("MYSTERY : Y : " + str(y))
         utime.sleep(0.2)
      
     utime.sleep(1)
@@ -272,8 +272,8 @@ while True:
         MYSTERY6 = (y,x,0)
         led.pixels_fill(MYSTERY6)
         led.pixels_show()
-        print (x)
-        print (y)
+        print ("MYSTERY : X: " + str(x))
+        print ("MYSTERY : Y : " + str(y))
         utime.sleep(0.2)
      
     utime.sleep(1)
