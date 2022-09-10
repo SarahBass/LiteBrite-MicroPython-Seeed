@@ -20,6 +20,13 @@ led = WS2812(12,1)#WS2812(pin_num,led_count)
 morsecode = "-."
 letter = "a"
 color = WHITE
+userWord = "hello"
+computerResponse = "hi"
+def space():
+    led.pixels_fill(BLACK)
+    led.pixels_show()
+    utime.sleep(0.5)
+
 def dah():
     led.pixels_fill(BLACK)
     led.pixels_show()
@@ -42,7 +49,9 @@ def dih():
     led.pixels_show()
     utime.sleep(0.2)
     
-def morseCode():
+    
+    
+def morseCode(morsecode):
     if (morsecode == ".-"):
         letter = 'a'
     elif (morsecode == "-..."):
@@ -115,10 +124,11 @@ def morseCode():
         letter = '9'
     elif (morsecode == "-----"):
         letter = '10'
-    else ():
+    else:
         letter = " "
-        
-    def morseAlphabet():
+    return letter
+
+def morseAlphabet(letter):
     if (letter == 'a'):
         morsecode = ".-"
     elif (letter == 'b'):
@@ -169,12 +179,31 @@ def morseCode():
         morsecode = "-..-"
     elif (letter == 'y'):
         morsecode = "-.--"
-    elif (letter == 'z')
-    morsecode = "--.."
+    elif (letter == 'z'):
+        morsecode = "--.."
+    else:
+        morsecode = ""
+    return morsecode
+
+            
 
 while True:
     
-     userinput = input()
+    userinput = (input("Enter Here: "))
+     
+    for j in range (len(userinput)):
+        letter= userinput[j]
+        morsecode = morseAlphabet(letter)
+        for i in range (len(morsecode)):
+            morse = morsecode[i]
+            if morse == "-":
+                dah()
+            elif morse == ".":
+                dih()
+            else:
+                space()
+        space()
+     
      
     
     
