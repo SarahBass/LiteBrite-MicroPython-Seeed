@@ -1,0 +1,13 @@
+from ws2812 import WS2812
+import utime
+import machine
+power = machine.Pin(11,machine.Pin.OUT)
+power.value(1)
+BLACK = (0, 0, 0)
+led = WS2812(12,1)#WS2812(pin_num,led_count)
+
+while True:
+    
+    led.pixels_fill(BLACK)
+    led.pixels_show()
+        
