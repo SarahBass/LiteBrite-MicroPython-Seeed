@@ -17,94 +17,172 @@ MAGENTA = (200, 0, 150)
 WHITE = (255, 255, 255)
 COLORS = (RED, YELLOW, ORANGE, YELLOWGREEN, GREEN, CYAN, BLUE, PURPLE, MAGENTA, WHITE)
 led = WS2812(12,1)#WS2812(pin_num,led_count)
-
-while True:
-    #dah
-    if "-"
+morsecode = "-."
+letter = "a"
+color = WHITE
+def dah():
     led.pixels_fill(BLACK)
     led.pixels_show()
     utime.sleep(0.2)
-    led.pixels_fill(WHITE)
+    led.pixels_fill(color)
     led.pixels_show()
     utime.sleep(0.5)   
     led.pixels_fill(BLACK)
     led.pixels_show()
     utime.sleep(0.2)
     
-    #dih
-        if "."
+def dih():
     led.pixels_fill(BLACK)
     led.pixels_show()
     utime.sleep(0.2)
-    led.pixels_fill(WHITE)
+    led.pixels_fill(color)
     led.pixels_show()
     utime.sleep(0.2)   
     led.pixels_fill(BLACK)
     led.pixels_show()
-    utime.sleep(0.2)  
+    utime.sleep(0.2)
+    
+def morseCode():
+    if (morsecode == ".-"):
+        letter = 'a'
+    elif (morsecode == "-..."):
+        letter = 'b'
+    elif (morsecode == "-.-."):
+        letter = 'c'
+    elif (morsecode == "-.."):
+        letter = 'd'
+    elif (morsecode == "."):
+        letter = 'e'
+    elif (morsecode == "..-."):
+        letter = 'f'
+    elif (morsecode == "--."):
+        letter = 'g'
+    elif (morsecode == "...."):
+        letter = 'h'
+    elif (morsecode == ".."):
+        letter = 'i'
+    elif (morsecode == ".---"):
+        letter = 'j'
+    elif (morsecode == "-.-"):
+        letter = 'k'
+    elif (morsecode == ".-.."):
+        letter = 'l'
+    elif (morsecode == "--"):
+        letter = 'm'
+    elif (morsecode == "-."):
+        letter = 'n'
+    elif (morsecode == "---"):
+        letter = 'o'
+    elif (morsecode == ".--."):
+        letter = 'p'
+    elif (morsecode == "--.-"):
+        letter = 'q'
+    elif (morsecode == ".-."):
+        letter = 'r'
+    elif (morsecode == "..."):
+        letter = 's'
+    elif (morsecode == "-"):
+        letter = 't'
+    elif (morsecode == "..-"):
+        letter = 'u'
+    elif (morsecode == "...-"):
+        letter = 'v'
+    elif (morsecode == ".--"):
+        letter = 'w'
+    elif (morsecode == "-..-"):
+        letter = 'x'
+    elif (morsecode == "-.--"):
+        letter = 'y'
+    elif (morsecode == "--.."):
+        letter = 'z'
+    elif (morsecode == ".----"):
+        letter = '1'
+    elif (morsecode == "..---"):
+        letter = '2'
+    elif (morsecode == "...--"):
+        letter = '3'
+    elif (morsecode == "....-"):
+        letter = '4'
+    elif (morsecode == "....."):
+        letter = '5'
+    elif (morsecode == "-...."):
+        letter = '6'
+    elif (morsecode == "--..."):
+        letter = '7'
+    elif (morsecode == "---.."):
+        letter = '8'
+    elif (morsecode == "----."):
+        letter = '9'
+    elif (morsecode == "-----"):
+        letter = '10'
+    else ():
+        letter = " "
+        
+    def morseAlphabet():
+    if (letter == 'a'):
+        morsecode = ".-"
+    elif (letter == 'b'):
+        morsecode = "-..."
+    elif (letter == 'c'):
+        morsecode = "-.-."
+    elif (letter == 'd'):
+        morsecode = "-.."
+    elif (letter == 'e'):
+        morsecode = "."
+    elif (letter == 'f'):
+        morsecode = "..-."
+    elif (letter == 'g'):
+        morsecode = "--."
+    elif (letter == 'h'):
+        morsecode = "...."
+    elif (letter == 'i'):
+        morsecode = ".."
+    elif (letter == 'j'):
+        morsecode = ".---"
+    elif (letter == 'k'):
+        morsecode = "-.-"
+    elif (letter == 'l'):
+        morsecode = ".-.."
+    elif (letter == 'm'):
+        morsecode = "--"
+    elif (letter == 'n'):
+        morsecode = "-."
+    elif (letter == 'o'):
+        morsecode = "---"
+    elif (letter == 'p'):
+        morsecode = ".--."
+    elif (letter == 'q'):
+        morsecode = "--.-"
+    elif (letter == 'r'):
+        morsecode = ".-."
+    elif (letter == 's'):
+        morsecode = "..."
+    elif (letter == 't'):
+        morsecode = "-"
+    elif (letter == 'u'):
+        morsecode = "..-"
+    elif (letter == 'v'):
+        morsecode = "...-"
+    elif (letter == 'w'):
+        morsecode = ".--"
+    elif (letter == 'x'):
+        morsecode = "-..-"
+    elif (letter == 'y'):
+        morsecode = "-.--"
+    elif (letter == 'z')
+    morsecode = "--.."
 
-if (morsecode == ".-")letter = 'a'
-   if (morsecode == "-...")letter = 'b'
-   if (morsecode == "-.-.")letter = 'c'
-   if (morsecode == "-..")letter = 'd'
-   if (morsecode == ".")letter = 'e'
-   if (morsecode == "..-.")letter = 'f'
-   if (morsecode == "--.")letter = 'g'
-   if (morsecode == "....")letter = 'h'
-   if (morsecode == "..")letter = 'i'
-   if (morsecode == ".---")letter = 'j'
-   if (morsecode == "-.-")letter = 'k'
-   if (morsecode == ".-..")letter = 'l'
-   if (morsecode == "--")letter = 'm'
-   if (morsecode == "-.")letter = 'n'
-   if (morsecode == "---")letter = 'o'
-   if (morsecode == ".--.")letter = 'p'
-   if (morsecode == "--.-")letter = 'q'
-   if (morsecode == ".-.")letter = 'r'
-   if (morsecode == "...")letter = 's'
-   if (morsecode == "-")letter = 't'
-   if (morsecode == "..-")letter = 'u'
-   if (morsecode == "...-")letter = 'v'
-   if (morsecode == ".--")letter = 'w'
-   if (morsecode == "-..-")letter = 'x'
-   if (morsecode == "-.--")letter = 'y'
-   if (morsecode == "--..")letter = 'z'
-   if (morsecode == ".----")letter = '1'
-   if (morsecode == "..---")letter = '2'
-   if (morsecode == "...--")letter = '3'
-   if (morsecode == "....-")letter = '4'
-   if (morsecode == ".....")letter = '5'
-   if (morsecode == "-....")letter = '6'
-   if (morsecode == "--...")letter = '7'
-   if (morsecode == "---..")letter = '8'
-   if (morsecode == "----.")letter = '9'
-   if (morsecode == "-----")letter = '10'
+while True:
+    
+     userinput = input()
+     
+    
+    
+    
+     
+
+
    
-    /*--- Assign Values based on Random Letter---*/
-   if (letter == 'a') morsecode = ".-"
-   if (letter == 'b') morsecode = "-..."
-   if (letter == 'c') morsecode = "-.-."
-   if (letter == 'd') morsecode = "-.."
-   if (letter == 'e') morsecode = "."
-   if (letter == 'f') morsecode = "..-."
-   if (letter == 'g') morsecode = "--."
-   if (letter == 'h') morsecode = "...."
-   if (letter == 'i') morsecode = ".."
-   if (letter == 'j') morsecode = ".---"
-   if (letter == 'k') morsecode = "-.-"
-   if (letter == 'l') morsecode = ".-.."
-   if (letter == 'm') morsecode = "--"
-   if (letter == 'n') morsecode = "-."
-   if (letter == 'o') morsecode = "---"
-   if (letter == 'p') morsecode = ".--."
-   if (letter == 'q') morsecode = "--.-"
-   if (letter == 'r') morsecode = ".-."
-   if (letter == 's') morsecode = "..."
-   if (letter == 't') morsecode = "-"
-   if (letter == 'u') morsecode = "..-"
-   if (letter == 'v') morsecode = "...-"
-   if (letter == 'w') morsecode = ".--"
-   if (letter == 'x') morsecode = "-..-"
-   if (letter == 'y') morsecode = "-.--"
-   if (letter == 'z') morsecode = "--.."
+    
+  
 
