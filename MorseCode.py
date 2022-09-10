@@ -6,7 +6,7 @@ power.value(1)
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 YELLOW = (255, 150, 0)
-ORANGE = (200, 150, 0)
+ORANGE = (255, 50, 0)
 YELLOWGREEN = (100, 255, 0)
 GREEN = (0, 255, 0)
 CYAN = (0, 255, 255)
@@ -15,36 +15,39 @@ VIOLET = (255, 0, 255)
 PURPLE = (180, 0, 255)
 MAGENTA = (200, 0, 150)
 WHITE = (255, 255, 255)
-COLORS = (RED, YELLOW, ORANGE, YELLOWGREEN, GREEN, CYAN, BLUE, PURPLE, MAGENTA, WHITE)
+COLORS = (RED, YELLOW, ORANGE, GREEN, CYAN, BLUE, PURPLE, MAGENTA, WHITE)
+colors = ('red', 'yellow', 'orange', 'green', 'cyan', 'blue', 'purple', 'magenta', 'white')
 led = WS2812(12,1)#WS2812(pin_num,led_count)
 morsecode = "-."
 letter = "a"
 color = WHITE
 userWord = "hello"
 computerResponse = "hi"
+
+        
 def space():
     led.pixels_fill(BLACK)
     led.pixels_show()
     utime.sleep(0.5)
 
-def dah():
+def dah(color):
     led.pixels_fill(BLACK)
     led.pixels_show()
     utime.sleep(0.2)
     led.pixels_fill(color)
     led.pixels_show()
-    utime.sleep(0.5)   
+    utime.sleep(0.6)   
     led.pixels_fill(BLACK)
     led.pixels_show()
     utime.sleep(0.2)
     
-def dih():
+def dih(color):
     led.pixels_fill(BLACK)
     led.pixels_show()
     utime.sleep(0.2)
     led.pixels_fill(color)
     led.pixels_show()
-    utime.sleep(0.2)   
+    utime.sleep(0.1)   
     led.pixels_fill(BLACK)
     led.pixels_show()
     utime.sleep(0.2)
@@ -189,20 +192,35 @@ def morseAlphabet(letter):
 
 while True:
     
-    userinput = (input("Enter Here: "))
-     
-    for j in range (len(userinput)):
-        letter= userinput[j]
-        morsecode = morseAlphabet(letter)
-        for i in range (len(morsecode)):
-            morse = morsecode[i]
-            if morse == "-":
-                dah()
-            elif morse == ".":
-                dih()
-            else:
-                space()
+    userinput = (input("Enter Here: ").lower())
+    if userinput in colors:
+        color = COLORS[colors.index(userinput)]
+    elif userinput == "rainbow" :
+        for j in range (len(userinput)):
+            letter= userinput[j]
+            morsecode = morseAlphabet(letter)
+            for i in range (len(morsecode)):
+                morse = morsecode[i]
+                if morse == "-":
+                    dah(COLORS[j])
+                elif morse == ".":
+                    dih(COLORS[j])
+                else:
+                    space()
         space()
+    else :
+            for j in range (len(userinput)):
+                letter= userinput[j]
+                morsecode = morseAlphabet(letter)
+                for i in range (len(morsecode)):
+                    morse = morsecode[i]
+                    if morse == "-":
+                        dah(color)
+                    elif morse == ".":
+                        dih(color)
+                    else:
+                        space()
+            space()
      
      
     
