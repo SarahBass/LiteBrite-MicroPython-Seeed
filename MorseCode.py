@@ -184,6 +184,27 @@ def morseAlphabet(letter):
         morsecode = "-.--"
     elif (letter == 'z'):
         morsecode = "--.."
+    elif letter == '1':
+        morsecode = ".----"
+    elif letter == '2':
+        morsecode = "..---"
+        letter == '2'
+    elif letter == '3':
+        morsecode = "...--"     
+    elif letter == '4':
+        morsecode = "....-"   
+    elif letter == '5':
+        morsecode = "....."
+    elif letter == '6':
+        morsecode = "-...."
+    elif letter == '7':
+        morsecode = "--..."
+    elif letter == '8':
+        morsecode = "---.."
+    elif letter == '9':
+        morsecode = "----."
+    elif letter == '0':
+        morsecode = "-----"    
     else:
         morsecode = ""
     return morsecode
@@ -192,7 +213,7 @@ def morseAlphabet(letter):
 
 while True:
     
-    userinput = (input("Enter Here: ").lower())
+    userinput = (str(input("Enter Here: ").lower()))
     if userinput in colors:
         color = COLORS[colors.index(userinput)]
     elif userinput == "rainbow" :
