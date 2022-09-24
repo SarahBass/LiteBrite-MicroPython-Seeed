@@ -1,6 +1,7 @@
 # LiteBrite-MicroPython-Seeed
 A quick project using Seeed RP2040 and a Lite Brite- Great for kids!
 
+NOT COMPLETE-UNDER CONSTRUCTION
 
 <img src="https://github.com/SarahBass/LiteBrite-MicroPython-Seeed/blob/main/F434ED92-56FC-4EAE-BDE4-9FBB9E8F8BC5.gif" width="450" height="300">
 
